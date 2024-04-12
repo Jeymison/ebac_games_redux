@@ -14,7 +14,7 @@ interface ExtendedRenderOptions extends Omit<RenderOptions, 'queries'> {
 export function renderizaComProvider(
   elemento: React.ReactElement,
   {
-    preloadedState = {},
+    preloadedState = {}, // estado inical que queremos
     store = configuraStore(preloadedState),
     ...opcoesAdicionais
   }: ExtendedRenderOptions = {}
